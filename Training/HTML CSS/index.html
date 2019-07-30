@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+        
+    <body>
+        <span><h1>Timer: <span id="time">00:00:00</span></h1></span>
+        <br>
+
+        <button id="demo" onclick="myFunction()">Click me.</button>
+        
+        <script>
+        function myFunction() {
+            setInterval(function(){ var d=new Date();
+                document.getElementById("time").innerHTML=(d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()); }, 1000)
+            
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Listing photos using ajax</title>
+</head>
+
+<body>
+<button type="button" onClick="getPhotos()">See photos</button>
+<br>
+<div id="demo"></div>
+<script>
+function getPhotos()
+{
+	const Http = new XMLHttpRequest();
+	const url='https://jsonplaceholder.typicode.com/photos';
+	Http.open("GET", url);
+	Http.send();
+	Http.onreadystatechange=(e)=>{
+	console.log(Http.responseText)
+/*	Http.onreadystatechange = function(){
+		if(this.readyState==4 && this.status==200)
+		{
+			document.getElementById("demo").innerHTML = this.responseText;
+		}
+	};  */
+}  
+}
+</script>
+</body>
+</html>

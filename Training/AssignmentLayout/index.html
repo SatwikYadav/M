@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+            }
+            .header {
+                position: -webkit-sticky;
+                height:65px;
+                background-color: rgb(32, 32, 32);
+
+            }
+            .logo {
+                
+                width :10%;
+                height: 65px;
+                background-color: grey;
+            }
+            .vertical-menu a {
+                border-right: 3px solid white;
+                height:41px;
+                float: left;
+                background-color: grey;
+                color: white;
+                display: block;
+                padding: 12px;
+                text-decoration: none;
+            }
+            .banner {
+                width: 100%;
+                height:250px;
+                background-color:black;
+            }
+            .banner p{
+                color: rgb(23, 54, 23);
+                padding-left:100px;
+                border-right:3px solid black;
+            }
+            #bannerbg{
+                width: 100%;
+                height: 250px;
+                object-fit: contain;
+                filter: blur(8px);
+                position: fixed;
+            }
+            .featured{
+                width: 100%;
+                height:400px;
+                background-color:rgb(167, 167, 167);
+            }
+            .featured div{
+                width: 300px;
+                height:300px;
+                float: left;
+                margin: 50px;
+                border: 2px solid black;
+            }
+            .type div{
+                width: 400px;
+                height:300px;
+                float: left;
+                margin: 70px;
+                border: 2px solid black;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo" style=" float: left" >
+                <img src="Capture.jpg" style="width :94%;height:85%;padding: 3%;">
+            </div>
+            <div class="vertical-menu" style="float: right">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">News</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+            </div>
+        </div>
+        <div class="banner">
+            <!--<img src="Capture.jpg" alt="WORLD BLUR IMAGE" id="bannerbg">-->
+            <br>
+            <h1 style="padding-left:200px;color: green;">World</h1>
+            <p>World Tourism Organization. The World Tourism Organization (UNWTO) is the United Nations specialized agency responsible for the promotion of responsible, sustainable and universally accessible tourism<br></p>
+            <p> It serves as a global forum for tourism policy issues and a practical source of tourism knowledge..</p>
+            <br>
+            <input type="text" placeholder="Enter text to search..." style="margin-left:400px;  height: 30px;">
+        </div> 
+        <div class="featured">
+                <div class="london">
+                  <h2>London</h2>
+                  <p>London is the capital city of England.</p>
+                  <p>It is the most populous city in the United Kingdom,
+                  with a metropolitan area of over 13 million inhabitants.</p>
+                </div>
+              
+                <div class="france">
+                  <h2>Paris</h2>
+                  <p>Paris is the capital of France.</p> 
+                  <p>The Paris area is one of the largest population centers in Europe,
+                  with more than 12 million inhabitants.</p>
+                </div>
+              
+                <div class="japan">
+                  <h2>Tokyo</h2>
+                  <p>Tokyo is the capital of Japan.</p>
+                  <p>It is the center of the Greater Tokyo Area,
+                  and the most populous metropolitan area in the world.</p>
+                </div>
+                <div class="japan">
+                        <h2>Delhi</h2>
+                        <p>Delhi is the capital of India.</p>
+                        <p>It is the center of the Greater North India,
+                        and the most populous metropolitan area in the world.</p>
+                </div>
+            </div>
+        <div class="type">
+                <div class="trek">
+                        <h2>Trekking</h2>
+                        <p>Trekking is a form of walking, undertaken with the specific purpose of exploring and enjoying the scenery.</p>
+                        <p>It usually takes place on trails in areas of relatively unspoiled wilderness." Trekking is a form of walking, undertaken with the specific purpose of exploring and enjoying the scenery.</p>
+                        <button id="btn" style="float: right;margin-right: 25px;margin-top: 70px;">Explore Packages</button>
+                    </div>
+                    
+                <div class="sight">
+                        <h2>Sight Seeing</h2>
+                        <p>Sightseeing is the activity of travelling around a city or region to see the interesting places that tourists usually visit. ...a two-week tour, allowing some time in all the major cities for sightseeing.</p> 
+                        <p>The Paris area is one of the largest population centers in Europe,
+                        with more than 12 million inhabitants.</p>
+                        <button id="btn" style="float: right;margin-right: 25px;margin-top: 50px;">Explore Packages</button>
+                      </div>
+                    
+                <div class="Adv">
+                        <h2>Adventure</h2>
+                        <p>An adventure is an exciting experience that is typically a bold, sometimes risky, undertaking.</p>
+                        <p> Adventures may be activities with some potential for physical danger such as traveling, exploring, skydiving, mountain climbing, scuba diving, river rafting or participating in extreme sports</p>
+                        <button id="btn" style="float: right;margin-right: 25px;margin-top: 50px;">Explore Packages</button>
+                    </div>
+        </div>
+              
+    </body>
+</html>
